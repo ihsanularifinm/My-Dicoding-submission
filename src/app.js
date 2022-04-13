@@ -1,0 +1,12 @@
+import "@fortawesome/fontawesome-free/js/fontawesome";
+import "@fortawesome/fontawesome-free/js/solid";
+import "@fortawesome/fontawesome-free/js/regular";
+import "@fortawesome/fontawesome-free/js/brands";
+import "regenerator-runtime";
+import "./script/component/navbar.js";
+import main from "./script/view/main.js";
+import "./script/component/footer.js";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+document.addEventListener("DOMContentLoaded", main);
