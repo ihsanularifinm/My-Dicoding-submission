@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #525252;
+	color: white;
+}
+
+header {
+	display: inline;
+}
+
+.jumbotron {
+	padding: 50px;
+	background-color: #0f0f0f;
+	text-align: center;
+}
+
+.jumbotron h1 {
+	font-size: 60px;
+	font-family: 'Lobster', cursive;
+	margin-bottom: 0;
+}
+
+.jumbotron p {
+	margin-top: 8px;
+}
+
+nav {
+	background-color: #313131;
+	padding: 5px;
+	position: sticky;
+	top: 0;
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+.logo {
+	font-family: 'Lobster', cursive;
+}
+
+nav a {
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: auto;
+}
+
+#content {
+	flex: 75%;
+	padding: 0 20px 20px;
+}
+
+#content article {
+	padding-top: 55px;
+}
+
+.card,
+.profile {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+.col-gallery {
+	padding: 8px;
+}
+
+.col-gallery {
+	float: left;
+	width: 50%;
+}
+
+.gallery::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.img-gallery {
+	background-color: #313131;
+	padding: 10px;
+}
+
+.img-gallery img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+}
+
+.contentSlides::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.imgSlides {
+	float: left;
+	width: 40%;
+	margin-right: 10px;
+}
+
+.imgSlides img {
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.btnSlide {
+	text-align: center;
+}
+
+.btnSlide a {
+	cursor: pointer;
+	font-size: 25px;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.btnSlide a:hover {
+	color: #313131;
+}
+
+aside {
+	flex: 25%;
+	background-color: #414141;
+	padding: 55px 20px 20px;
+}
+
+.profile header {
+	text-align: center;
+}
+
+.profile img {
+	width: 150px;
+}
+
+.profile th {
+	text-align: left;
+	border-left: 1px solid;
+	padding-left: 5px;
+}
+
+.profile td {
+	padding: 0 0 8px 7px;
+}
+
+footer {
+	padding: 10px;
+	background-color: #313131;
+	text-align: center;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+	main {
+		flex-direction: column;
+	}
+
+	nav ul {
+		padding-left: 10px;
+	}
+
+	nav li {
+		margin-right: 10px;
+	}
+
+	.col-gallery {
+		width: 100%;
+	}
+
+	.imgSlides {
+		width: 100%;
+		margin: 0 0 5px;
+	}
+
+	aside {
+		padding: 0 20px 20px;
+	}
+}
