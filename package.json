@@ -1,0 +1,28 @@
+{
+	"name": "my-dicoding-submission-back-end-pemula",
+	"version": "1.0.0",
+	"description": "Belajar Membuat Aplikasi Back-End untuk Pemula",
+	"main": ".src/server.js",
+	"scripts": {
+		"dev": "nodemon ./src/server.js",
+		"lint": "eslint ./src"
+	},
+	"keywords": [
+		"Submission",
+		"Dicoding",
+		"Back-End",
+		"Pemula"
+	],
+	"author": "Muhammad Ihsanul Arifin - ihsanularifinm - arifinar4@gmail.com",
+	"license": "ISC",
+	"devDependencies": {
+		"eslint": "^8.13.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.26.0",
+		"nodemon": "^2.0.15"
+	},
+	"dependencies": {
+		"@hapi/hapi": "^20.2.1",
+		"nanoid": "^3.3.2"
+	}
+}
