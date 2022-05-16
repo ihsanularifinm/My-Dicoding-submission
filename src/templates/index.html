@@ -1,16 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Restaurant Apps Starter Project</title>
-</head>
-<body>
-<h1>Restaurant Apps Starter Project</h1>
-<p>Hallo coders! Anda berhasil menjalankan starter project.</p>
-<p>Jangan lupa untuk menggunakan salah satu gambar yang berada pada ./images/heros sebagai background hero elemen</p>
-<img src="./images/heros/hero-image_1.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_2.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_3.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_4.jpg" width="450" alt="">
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Resto List</title>
+	</head>
+	<body>
+		<a href="#dishes" class="skip-link">Menuju ke konten</a>
+		<header>
+			<nav class="navbar" id="navbar">
+				<div class="logo"><a href="/">Resto List</a></div>
+				<a href="#menu" class="toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</a>
+				<div class="nav-links">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/">Favorite</a></li>
+						<li><a href="https://github.com/ihsanularifinm" target="blank">About Us</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="hero">
+				<div>
+					<h1>You hungry?</h1>
+					<article>
+						<p>Explore local dishes with just one click.<br />Scratch daily and use only the best ingredients.</p>
+						<a href="#dishes">Browse Dishes</a>
+					</article>
+				</div>
+			</section>
+			<section class="container">
+				<div class="title">
+					<h1>Explore Restaurant</h1>
+				</div>
+				<div class="cards" id="dishes">
+					<div class="card">
+						<figure>
+							<img src="https://restaurant-api.dicoding.dev/images/medium/41" alt="Resto Bring Your Phone Cafe" />
+							<figcaption>Kota Medan</figcaption>
+						</figure>
+						<div class="content">
+							<p class="rating">★ 4.6</p>
+							<h1>Bring Your Phone Cafe</h1>
+							<p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+							<button>Details</button>
+						</div>
+					</div>
+					<div class="card">
+						<figure>
+							<img src="https://restaurant-api.dicoding.dev/images/medium/07" alt="Resto Run The Gun" />
+							<figcaption>Kota Bali</figcaption>
+						</figure>
+						<div class="content">
+							<p class="rating">★ 4.6</p>
+							<h1>Run The Gun</h1>
+							<p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+							<button>Details</button>
+						</div>
+					</div>
+					<div class="card">
+						<figure>
+							<img src="https://restaurant-api.dicoding.dev/images/medium/29" alt="Resto Pangsit Express" />
+							<figcaption>Kota Ternate</figcaption>
+						</figure>
+						<div class="content">
+							<p class="rating">★ 4.8</p>
+							<h1>Pangsit Express</h1>
+							<p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+							<button>Details</button>
+						</div>
+					</div>
+					<div class="card">
+						<figure>
+							<img src="https://restaurant-api.dicoding.dev/images/medium/38" alt="Resto Ducky Duck" />
+							<figcaption>Kota Malang</figcaption>
+						</figure>
+						<div class="content">
+							<p class="rating">★ 4.7</p>
+							<h1>Ducky Duck</h1>
+							<p class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+							<button>Details</button>
+						</div>
+					</div>
+					<div class="card">
+						<figure>
+							<img src="https://restaurant-api.dicoding.dev/images/medium/40" alt="Resto Kafein" />
+							<figcaption>Kota Bali</figcaption>
+						</figure>
+						<div class="content">
+							<p class="rating">★ 3.8</p>
+							<h1>Kafein</h1>
+							<p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+							<button>Details</button>
+						</div>
+					</div>
+					<div class="card">
+						<figure>
+							<img src="https://restaurant-api.dicoding.dev/images/medium/08" alt="Resto Makan Mudah" />
+							<figcaption>Kota Malang</figcaption>
+						</figure>
+						<div class="content">
+							<p class="rating">★ 4.6</p>
+							<h1>Makan Mudah</h1>
+							<p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+							<button>Details</button>
+						</div>
+					</div>
+					<div class="card">
+						<figure>
+							<img src="https://restaurant-api.dicoding.dev/images/medium/32" alt="Resto Saya Suka" />
+							<figcaption>Kota Surabaya</figcaption>
+						</figure>
+						<div class="content">
+							<p class="rating">★ 3.6</p>
+							<h1>Saya Suka</h1>
+							<p class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+							<button>Details</button>
+						</div>
+					</div>
+					<div class="card">
+						<figure>
+							<img src="https://restaurant-api.dicoding.dev/images/medium/45" alt="Resto Gigitan Cepat" />
+							<figcaption>Kota Aceh</figcaption>
+						</figure>
+						<div class="content">
+							<p class="rating">★ 4</p>
+							<h1>Gigitan Cepat</h1>
+							<p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+							<button>Details</button>
+						</div>
+					</div>
+					<div class="card">
+						<figure>
+							<img src="https://restaurant-api.dicoding.dev/images/medium/04" alt="Resto Fairy Cafe" />
+							<figcaption>Kota Malang</figcaption>
+						</figure>
+						<div class="content">
+							<p class="rating">★ 3.9</p>
+							<h1>Fairy Cafe</h1>
+							<p class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+							<button>Details</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>Copyright &copy; 2022 - Resto List</p>
+		</footer>
+	</body>
 </html>
