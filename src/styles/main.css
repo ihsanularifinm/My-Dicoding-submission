@@ -25,6 +25,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 99;
 }
 .navbar .logo {
 	font-size: 2rem;
@@ -33,9 +34,6 @@
 .navbar .logo a {
 	text-decoration: none;
 	color: white;
-}
-.navbar input[type='checkbox'] {
-	display: none;
 }
 .nav-links {
 	height: 100%;
@@ -64,8 +62,11 @@
 	display: none;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 50px;
+	width: 44px;
 	height: 44px;
+	border: none;
+	background: none;
+	padding: 6px;
 }
 .toggle-button .bar {
 	width: 100%;
@@ -87,7 +88,7 @@ main {
 }
 .hero div {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
 	align-items: center;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -133,7 +134,7 @@ main {
 }
 .cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
 	grid-gap: 1rem;
 	padding: 5rem 2rem 2rem;
 }
@@ -196,12 +197,139 @@ main {
 	opacity: 0.8;
 	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
 }
+/* Restaurant Detail */
+.resto-details {
+	padding: 5rem 2rem 2rem;
+	font-family: 'Roboto', sans-serif;
+}
+.img-resto img {
+	width: 100%;
+	border-radius: 10px;
+}
+.info-resto,
+.menu-resto,
+.review-resto,
+.add-review-form {
+	margin: 10px 0;
+}
+.info-resto h2 {
+	margin: 5px 0;
+}
+.info-resto p:nth-of-type(2) {
+	margin-bottom: 8px;
+}
+.menu-resto div > ul {
+	padding: 18px;
+	border-radius: 10px;
+	border: 1px solid #000;
+	margin-top: 10px;
+}
+.menu-resto div > ul > li {
+	margin-left: 28px;
+	font-size: 2rem;
+	font-weight: 700;
+}
+.menu-resto div > ul > ul {
+	padding-left: 16px;
+	columns: 2;
+}
+.menu-resto div > ul > ul > li {
+	margin-left: 28px;
+	padding: 4px;
+}
+.list-menu {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 10px;
+}
+.reviewer-resto:hover {
+	border-radius: 10px;
+	box-shadow: 0px 10px 13px -7px #333, 5px 5px 5px 5px #333;
+}
+.reviewer-resto:first-child {
+	margin-top: 20px;
+}
+.review-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 1em 0.2em;
+	color: #f4511e;
+	border-bottom: 1px solid #000;
+}
+.reviewer-name {
+	font-weight: bold;
+}
+.reviewer-date {
+	font-size: 0.8em;
+	font-weight: lighter;
+}
+.review-body {
+	padding: 0.5em 1em 1em;
+	text-align: left;
+}
+.add-review-form form {
+	margin-top: 15px;
+	text-align: left;
+}
+.add-review-form label {
+	margin-bottom: 5px;
+	display: block;
+}
+.add-review-form input {
+	height: 44px;
+	margin-bottom: 20px;
+}
+.add-review-form input,
+.add-review-form textarea {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px;
+}
+.add-review-form textarea {
+	height: 15vh;
+	margin-bottom: 20px;
+}
+.add-review-form button {
+	height: 44px;
+	padding: 10px 40px;
+	background-color: goldenrod;
+	border: none;
+	cursor: pointer;
+	display: block;
+	color: #fff;
+}
+.add-review-form button:hover {
+	opacity: 0.8;
+}
+.like {
+	font-size: 18px;
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	background-color: #ce1212;
+	color: white;
+	border: 0;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* End Restaurant Detail */
 footer {
 	background-color: #333;
 	padding: 0.75rem;
 	color: white;
 	text-align: center;
 	font-size: 0.9rem;
+}
+@media only screen and (min-width: 432px) {
+	.menu-resto div > ul > ul {
+		columns: 3;
+	}
 }
 @media only screen and (max-width: 576px) {
 	.navbar {
@@ -212,7 +340,7 @@ footer {
 		display: flex;
 	}
 	.toggle-button.open .bar:nth-child(1) {
-		transform: translateY(19px) rotate(405deg);
+		transform: translateY(13px) rotate(405deg);
 	}
 	.toggle-button.open .bar:nth-child(2) {
 		transform: translateX(-50px);
@@ -220,7 +348,7 @@ footer {
 		box-shadow: none;
 	}
 	.toggle-button.open .bar:nth-child(3) {
-		transform: translateY(-19px) rotate(-225deg);
+		transform: translateY(-13px) rotate(-225deg);
 	}
 	.nav-links {
 		display: none;
@@ -241,5 +369,42 @@ footer {
 	}
 	main {
 		margin-top: 60px;
+	}
+}
+@media only screen and (min-width: 576px) {
+	.menu-resto div > ul > ul {
+		columns: 4;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.resto-details .detail {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0 20px;
+	}
+	.info-resto {
+		margin: 0;
+	}
+	.info-resto h2 {
+		margin-top: 0;
+	}
+	.menu-resto div {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0 20px;
+	}
+	.menu-resto,
+	.review-resto,
+	.add-review-form {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	.menu-resto div > ul > ul {
+		columns: 2;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.menu-resto div > ul > ul {
+		columns: 3;
 	}
 }
