@@ -1,4 +1,4 @@
-# Submission: Katalog Restoran
+# Submission: Katalog Restoran + PWA
 
 ## Pengenalan
 
