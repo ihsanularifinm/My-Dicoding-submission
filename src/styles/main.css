@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Recursive&family=Roboto&display=swap');
 .skip-link {
 	position: absolute;
 	top: -40px;
@@ -16,7 +17,6 @@
 	top: 0;
 }
 .navbar {
-	font-family: cursive;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -30,6 +30,7 @@
 .navbar .logo {
 	font-size: 2rem;
 	margin: 0.5rem;
+	font-family: 'Lobster', cursive;
 }
 .navbar .logo a {
 	text-decoration: none;
@@ -37,6 +38,7 @@
 }
 .nav-links {
 	height: 100%;
+	font-family: 'Recursive', sans-serif;
 }
 .nav-links ul {
 	display: flex;
@@ -76,15 +78,14 @@
 	transition: all 0.5s ease-in-out;
 }
 main {
-	margin-top: 61.3px;
+	margin-top: 55px;
 	/* overflow: hidden; */
 }
 .hero {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/images/heros/hero-image.jpg') center;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/images/heros/hero-image-small.jpg') center;
 	background-size: cover;
 	padding: 4rem 2rem;
 	color: white;
-	font-family: cursive;
 }
 .hero div {
 	display: grid;
@@ -96,10 +97,13 @@ main {
 .hero span {
 	font-size: 4rem;
 	padding-bottom: 1rem;
+	font-family: 'Lobster', cursive;
+}
+.hero article {
+	font-family: 'Recursive', sans-serif;
 }
 .hero article p {
 	font-size: 1.5rem;
-	font-weight: 200;
 }
 .hero article a {
 	padding: 1rem;
@@ -137,6 +141,7 @@ main {
 	grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
 	grid-gap: 1rem;
 	padding: 5rem 2rem 2rem;
+	font-family: 'Roboto', sans-serif;
 }
 .card {
 	border-radius: 0.5rem;
@@ -155,7 +160,6 @@ main {
 	width: 100%;
 	color: white;
 	font-style: italic;
-	font-weight: bold;
 	text-align: center;
 	font-size: 18px;
 	padding: 4px 0;
@@ -262,7 +266,6 @@ main {
 }
 .reviewer-date {
 	font-size: 0.8em;
-	font-weight: lighter;
 }
 .review-body {
 	padding: 0.5em 1em 1em;
@@ -367,9 +370,6 @@ footer {
 	.nav-links.active {
 		display: flex;
 	}
-	main {
-		margin-top: 60px;
-	}
 }
 @media only screen and (min-width: 576px) {
 	.menu-resto div > ul > ul {
@@ -377,6 +377,10 @@ footer {
 	}
 }
 @media only screen and (min-width: 768px) {
+	.hero {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/images/heros/hero-image-large.jpg') center;
+		background-size: cover;
+	}
 	.resto-details .detail {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -406,5 +410,12 @@ footer {
 @media only screen and (min-width: 992px) {
 	.menu-resto div > ul > ul {
 		columns: 3;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.hero {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/images/heros/hero-image.jpg') center;
+		background-size: cover;
 	}
 }
